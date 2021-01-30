@@ -15,7 +15,7 @@ for submission in reddit.subreddit('learnspanish').stream.submissions():
     else:
         if language != 'en':
             try:
-                print(user_text)
-                print(translate.google(user_text))
+                print(user_text) #Original Text
+                print(translate.google(user_text)) #Translated Text
             except Exception:
                 pass
